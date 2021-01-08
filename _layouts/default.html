@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content=
+"width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/assets/css/stntz-tachyons.min.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6f61" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+
+<style>
+  .section-wrapper {
+    margin-top: -2em;
+    padding-top: 2em;
+  }
+
+  .section-wrapper:first-child .section {
+    padding-top: 4em;
+  }
+</style>
+
+<!-- Jekyll SEO -->
+{% seo %}
+</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="company-name db dt-l w-100 border-box pa3 ph6-l"></div>
+				{% include navigation.html %}
+			</div>
+
+			<section class="hero pv3 ph3 ph6-ns w-100">
+				<div class="text-container ">
+					{% if page.hero %}
+						<h2 itemprop="name" class="f1 lh-title helvetica">{{ page.hero }}</h2>
+
+					{% elsif page.title %}
+						<h2 itemprop="name" class="f1 lh-title helvetica">{{ page.title }}</h2>
+					{% endif %}
+
+					{% if page.subtitle %}
+
+						<h3 class="f3 lh-title helvetica">{{ page.subtitle }}</h3>
+					{% endif %}
+					</div>
+			</section>
+		</header>
+
+		<div class="">
+
+		{{ content }}
+
+	</div>
+
+		{% include footer.html %}
+
+		<script src="assets/js/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/jquery.nav.js"></script>
+		<script>
+		$(document).ready(function() {
+		$('#nav').onePageNav({
+			filter: ':not(.no-animation)',
+			currentClass: 'current',
+			changeHash: false,
+			scrollSpeed: 750,
+			scrollThreshold: 0.5,
+			filter: '',
+			easing: 'swing',
+	begin: function() {
+		//I get fired when the animation is starting
+		//Hack so you can click other menu items after the initial click
+		$('body').append('<div id="device" style="height: 2em;"></div>');
+	},
+	end: function() {
+		//I get fired when the animation is ending
+		$('#device').remove();
+	},
+	scrollChange: function($currentListItem) {
+		//I get fired when you enter a section and I pass the list item of the section
+	}
+			});
+		});
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,134 @@
+---
+title: STENTS
+hero: STENTS
+subtitle: Teo Capelle MD Architecture & Urban Planning
+---
+
+
+<a href="#about"></a>
+<article class="vh-100 dt w-100 bg-green">
+  <div class="section-wrapper dtc v-mid white ph3 ph4-l" id="about">
+		<section class="section mw7 center">
+  <h2 class="helvetica pv0 ph3 ph0-l">Domaines d'expertise</h2>
+  <article class="pv4 bt bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+      <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+        <h2 class="f3 helvetica mt0 lh-title">Planning</h2>
+        <p class="f5 f4-l lh-copy avenir">
+					Développement durable: analyses structure urbaine et dynamique territoriale, approche sociale, environnemental et économique
+Capacité d’analyse, indentification, définition des projets, scénarios de développement, monitoring et évaluation
+Adaptation aux changements climatiques : Écologie et énergie dans différents contextes, analyse et utilisation logiciels. Résilience urbaine, connaissance dans l’hydrologie urbaine dans différents contextes, analyse et utilisation logiciels.
+Compréhension des aspects financiers
+        </p>
+      </div>
+			<div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+				<h2 class="f3 avenir mt0 lh-title">PLANIFICATION STRUCTURALE SPATIALE</h2>
+				<h3 class="f3 avenir black-60 mt0 lh-title">DÉVELOPPEMENT DURABLE</h3>
+				<h2 class="f3 avenir mt0 lh-title">ADAPTATION ET RESILIENCE</h2>
+				<h3 class="f3 avenir black-60 mt0 lh-title">ÉCOLOGIE, ÉNERGIE, HYDROLOGIE</h3>
+      </div>
+    </div>
+  </article>
+  <article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+      <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+        <h2 class="f3 avenir mt0 lh-title">Design</h2>
+        <p class="f5 f4-l lh-copy avenir">
+					Approche orientée vers l’utilisateur/usager, bonne collaboration et écoute.
+Vision globale de la problématique, basée sur les opportunités et la gestion de ressources limitées
+        </p>
+      </div>
+      <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+				<h2 class="f3 avenir mt0 lh-title">RESEARCH BY DESIGN</h2>
+				<h3 class="f3 avenir black-60 mt0 lh-title">ACTEURS URBAINS</h3>
+				<h3 class="f3 avenir black-60 mt0 lh-title">PROCESSUS DE MODELISATION</h3>
+				<h3 class="f3 avenir black-60 mt0 lh-title">SCENARIOS</h3>
+				<h3 class="f3 avenir black-60 mt0 lh-title">DOCUMENTS DE SENSIBILISATION</h3>
+      </div>
+    </div>
+  </article>
+	<article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+      <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+        <h2 class="f3 avenir mt0 lh-title">Project Management</h2>
+        <p class="f5 f4-l lh-copy avenir">
+					Efficacité selon les objectifs à acquérir (PMBOK méthodologie)
+					Gestion de tâches complexes et gestion humaine
+					Communication et organisation, travail en équipe multidisciplinaire afin de créer des synergies
+        </p>
+      </div>
+      <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+				<h2 class="f3 avenir mt0 lh-title">COMMUNICATION ET INTÉGRATION</h2>
+				<h3 class="f3 avenir black-60 mt0 lh-title">PROJECT MANAGEMENT</h3>
+				<h3 class="f3 avenir black-60 mt0 lh-title">METHODOLOGIE PMBOK</h3>
+      </div>
+    </div>
+  </article>
+
+</section>
+  </div>
+</article>
+
+<br>
+<br>
+
+<a href="#portfolio"><h2 itemprop="name" class="section-wrapper pv3 ph3 ph6-ns f1 lh-title helvetica black" id="portfolio">Portfolio</h2></a>
+<div itemscope itemtype="http://schema.org/ItemList" class="content" id="posts">
+	<section class="section cf pb5 ph6-ns ph2">
+		<div class="portfolio container flex-wrap flex">
+
+				{% for post in site.posts  %}
+
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/post" class="post-list w-100 w-50-m ph2-m w-third-l ph3">
+
+						<div itemprop="image" class="style aspect-ratio aspect-ratio--1x1" >
+							<a href="{{ post.url }}" style="background-image:url({{ post.image }});"
+						class="grow db bg-center cover aspect-ratio--object" />
+							</a>
+						</div>
+
+						<article itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer" class="post-details dib v-mid lh-copy avenir">
+							<h3 itemprop="url"><a class="f5 f4-ns mb0 link black-90 link dim avenir" href="{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></h3>
+							<h4 itemprop="itemOffered">Project type: {{ post.categories }}</h4>
+
+							<div itemprop="description" class="post-description f6 f5 fw4 mt1 black-60 pb4">
+								{{ post.description_markdown | truncate: 92 | markdownify }}
+							</div>
+
+						</article>
+
+				</div>
+				{% endfor %}
+        
+		</div>
+
+    <div class="pa3">{% include site-search.html %}</div>
+    
+    
+</section>
+
+
+<a href="#contact"><h2 itemprop="name" class="section-wrapper pv3 ph3 ph6-ns f1 lh-title helvetica black" id="contact">Contact</h2></a>
+<section class="section pv3 ph3 ph6-ns w-100 lh-copy avenir">
+  {% include formcarry.html %}
+
+  {% comment %}
+  This is an example of how to set up a map, if you uncomment this, the map will work locally and on your own server (AWS, Netlify, etc.) but won't work with GitHub Pages.
+  {% endcomment %}
+
+  {% leaflet_map {"zoom" : 15 } %}
+
+      {% leaflet_marker { "latitude" : 50.825909,
+                         "longitude" : 4.3701717,
+                         "popupContent" : "Stents Architecture and Urbanism, Brussels, Belgium"} %}
+
+      {% leaflet_geojson {
+          "type": "Feature",
+          "properties": { "popupContent": "Stents Architecture and Urbanism",
+                          "href": "https://stents.be" },
+           } %}
+
+  {% endleaflet_map %}
+</section>
+
+<div id="#device"></div>
