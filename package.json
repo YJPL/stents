@@ -49,8 +49,7 @@
     "build:watch": "watch \"npm run build\" ./src/"
   },
   "dependencies": {
-    "browser-sync": "^2.26.13",
-    "axios": ">=0.21.1",
+    "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp-basswork": "^0.2.0",
     "gulp-concat": "^2.6.1",
