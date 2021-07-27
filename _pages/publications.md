@@ -6,6 +6,9 @@ permalink: /publications/
 hero: Publications
 ---
 
+[Batex Lannoy 2013](/documents/BATEX_DESCRIPTIF-TECHNIQUE.pdf)
+
+
 [BAMB Building as Material Bank D14 – 4 pilots built + Feedback report 28/02/2019](/documents/20190228-BE-BAMB-D14-3.pdf){: .b .dark-green .hover-green}
 
 [Annexe 3 Project: Capelle 2014-BOOK_HR](/documents/2014-BOOK_HR.pdf){: .b .dark-blue .hover-blue}
