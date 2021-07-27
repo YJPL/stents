@@ -53,9 +53,6 @@ To add you formcarry endpoint URL to `_config.yml`, you'll need a fromcarry acco
 Add your map coordinates if you want to display a map. Please refer to the [jekyll-leaflet plugin](https://davidjvitale.com/tech/jekyll-leaflet/getting-started/) and [Leaflet](https://leafletjs.co
   m) documentation for customizing your map(s).
 
-### Product Pages
-If you have products on Gumroad, you can start adding product pages right away. Within the stents theme, you'll find a sample of a product page with free products, ```free-products.html```, located in ```_pages```.
-
 
 ## Develop
 
@@ -76,7 +73,7 @@ Tachyons is a CSS toolkit and design system based on using components. Please re
 
 ### Gulp commands with browser reload
 
-stents uses a couple of custom Gulp.js commands. To build your site concatenate your CSS (in `assets` -> `CSS`), simply run:
+stents uses a couple of custom Gulp.js commands (we use Gulp 4). To build your site concatenate your CSS (in `assets` -> `CSS`), simply run:
 
 ~~~bash
 gulp build
