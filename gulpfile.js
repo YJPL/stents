@@ -8,9 +8,8 @@ const postcss = require("gulp-postcss");
 const cp = require("child_process");
 const cssnano = require("cssnano");
 const del = require("del");
-const eslint = require("gulp-eslint");
+//const eslint = require("gulp-eslint");
 const gulp = require("gulp");
-const newer = require("gulp-newer");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const basswork = require("gulp-basswork");
@@ -54,14 +53,6 @@ function css() {
 }
 
 // Lint scripts
-function scriptsLint() {
-  return gulp
-    .src(["./assets/scripts/**/*", "./gulpfile.js"])
-    .pipe(plumber())
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-}
 
 // Transpile, concatenate and minify scripts
 
