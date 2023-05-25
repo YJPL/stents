@@ -23,14 +23,13 @@
     "url": "https://github.com/YJPL/stents/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "cssnano": "^5.1.12",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
     "gulp-size": "^4.0.0",
-    "immutable-css-cli": "^1.1.1",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.23",
     "watch": "^1.0.2"
   },
   "contributors": [
@@ -41,15 +40,14 @@
   ],
   "scripts": {
     "start": "npm run build:watch",
-    "mutations": "immutable-css src/sup-tachyons.css --strict",
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/sup-tachyons.css > assets/css/sup-tachyons.css",
     "build:minify": "tachyons src/sup-tachyons.css --minify > assets/css/sup-tachyons.min.css",
     "build:watch": "watch \"npm run build\" ./src/"
   },
   "dependencies": {
-    "browser-sync": "^2.27.11",
-    "del": "^6.1.1",
+    "browser-sync": "^2.29.3",
+    "del": "^7.0.0",
     "gulp-basswork": "^0.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^2.0.0"
