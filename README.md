@@ -1,8 +1,6 @@
 # ⚡️ Stents
 Architecture &amp; Landscape Design Portfolio
 
-*in construction*
-
 ## Features
 
 - [x] List & display portfolio, thanks to Jekyll's collections or posts
