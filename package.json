@@ -1,14 +1,11 @@
 {
   "name": "stents",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Stents, architecture and urbanism",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YJPL/stents/",
-    "scripts": {
-      "gulp": "gulp"
-    }
+    "url": "https://github.com/YJPL/stents/"
   },
   "keywords": [
     "architecture",
@@ -25,31 +22,25 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
-    "gulp": "^4.0.2",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^9.0.1",
-    "gulp-size": "^4.0.0",
     "postcss": "^8.4.24",
-    "watch": "^1.0.2"
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^8.5.1",
+    "uglify-js": "^3.17.4"
   },
   "contributors": [
     {
-      "name": "Teo Capelle",
-      "email": "teo//at//stents//dot//be"
+      "name": "YJPL",
+      "email": ""
     }
   ],
   "scripts": {
-    "start": "npm run build:watch",
-    "build": "npm run build:css && npm run build:minify",
-    "build:css": "tachyons src/sup-tachyons.css > assets/css/sup-tachyons.css",
-    "build:minify": "tachyons src/sup-tachyons.css --minify > assets/css/sup-tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/"
-  },
-  "dependencies": {
-    "browser-sync": "^2.29.3",
-    "del": "^7.0.0",
-    "gulp-basswork": "^0.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-rename": "^2.0.0"
+    "start": "npm run build && npm run serve:jekyll",
+    "serve:jekyll": "JEKYLL_ENV=development bundle exec jekyll serve --livereload",
+    "minify-js": "uglifyjs assets/js/*.js -o assets/js/script.min.js",
+    "build": "npm run build:css && npm run minify:css",
+    "build:css": "postcss src/stntz-tachyons.css > assets/css/stntz-tachyons.css",
+    "minify:css": "postcss assets/css/stntz-tachyons.css > assets/css/stntz-tachyons.min.css  --use cssnano"
   }
 }
