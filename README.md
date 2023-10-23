@@ -1,6 +1,8 @@
 # ⚡️ Stents
 Architecture &amp; Landscape Design Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cfe4caf1-1115-4a9e-9690-37c024aece1b/deploy-status)](https://app.netlify.com/sites/stents/deploys)
+
 ## Features
 
 - [x] List & display portfolio, thanks to Jekyll's collections or posts
