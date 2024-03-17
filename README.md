@@ -66,7 +66,7 @@ npm install
 
 ### Tachyons
 
-You can change the site styling using [Tachyons](http://tachyons.io), look for the CSS in the `sup-theme` file, located in the `src` folder.
+You can change the site styling using [Tachyons](http://tachyons.io), look for the CSS in the `stntz-theme` file, located in the `src` folder.
 
 Tachyons is a CSS toolkit and design system based on using components. Please refer to [Tachyons documentation](http://tachyons.io/docs/), you can also start with [https://github.com/dwyl/learn-tachyons](https://github.com/dwyl/learn-tachyons)
 
@@ -77,7 +77,7 @@ Run the npm run
 build:css
 ~~~
 
-That will process all your CSS files in one readable file located in `assets/css/sup-tachyons.css`. 
+That will process all your CSS files in one readable file located in `assets/css/stntz-tachyons.css`. 
 
 to minify your css you can run 
 
