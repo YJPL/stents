@@ -13,7 +13,7 @@ Architecture &amp; Landscape Design Portfolio
 - [x] RSS/Atom feed
 - [x] SEO tags
 - [x] Microdata markup
-- [x] [Gulp.js](https://gulpjs.com) + [Browsersync](https://www.browsersync.io) for fast development
+- [x] Jekyll with livereload
 - [x] Site search
 
 ## Setup
