@@ -27,7 +27,7 @@
     "postcss-import": "^16.1.0",
     "postcss-nested": "^6.2.0",
     "postcss-preset-env": "^10.0.2",
-    "uglify-js": "^3.19.2"
+    "uglify-js": "^3.19.3"
   },
   "contributors": [
     {
@@ -37,7 +37,7 @@
   ],
   "scripts": {
     "start": "npm run build && npm run serve:jekyll",
-    "serve:jekyll": "JEKYLL_ENV=development bundle exec jekyll serve --livereload",
+    "serve:jekyll": "JEKYLL_ENV=production bundle exec jekyll serve --livereload --open-url http://localhost:4000/",
     "minify-js": "uglifyjs assets/js/*.js -o assets/js/script.min.js",
     "build": "npm run build:css && npm run minify:css",
     "build:css": "postcss src/stntz-tachyons.css > assets/css/stntz-tachyons.css",
