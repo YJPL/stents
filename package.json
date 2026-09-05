@@ -24,8 +24,8 @@
     "cssnano": "^9.0.2",
     "netlify-plugin-cache": "^1.0.3",
     "postcss": "^8.5.28",
-    "postcss-cli": "^11.0.1",
-    "postcss-import": "^16.2.0",
+    "postcss-cli": "^12.0.0",
+    "postcss-import": "^17.0.0",
     "postcss-nested": "^8.0.1",
     "postcss-preset-env": "^11.5.1",
     "uglify-js": "^3.19.3"
@@ -43,5 +43,8 @@
     "build": "npm run build:css && npm run minify:css",
     "build:css": "postcss src/stntz-tachyons.css > assets/css/stntz-tachyons.css",
     "minify:css": "postcss assets/css/stntz-tachyons.css > assets/css/stntz-tachyons.min.css  --use cssnano"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
   }
 }
